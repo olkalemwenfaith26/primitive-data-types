@@ -68,11 +68,10 @@ let thresholdForTall = 150
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let siblingsAreTall = (sistersHeight > thresholdForTall && brothersHeight > thresholdForTall)
-let siblingsAreShort = (sistersHeight < thresholdForTall && brothersHeight < thresholdForTall)
-let atLeastOneIsTall = (sistersHeight || brothersHeight) > thresholdForTall
-let onlyOneIsTall = (sistersHeight < thresholdForTall && brothersHeight > thresholdForTall) || (sistersHeight > thresholdForTall && brothersHeight < thresholdForTall)
-
+let siblingsAreTall = sistersHeight > thresholdForTall && brothersHeight > thresholdForTall
+let siblingsAreShort = sistersHeight < thresholdForTall && brothersHeight < thresholdForTall
+let atLeastOneIsTall = sistersHeight > thresholdForTall || brothersHeight > thresholdForTall
+let onlyOneIsTall = (sistersHeight > thresholdForTall && brothersHeight < thresholdForTall) || (sistersHeight < thresholdForTall && brothersHeight > thresholdForTall)
 ////////////////////////////////////////////////////////////////////////
 
 
